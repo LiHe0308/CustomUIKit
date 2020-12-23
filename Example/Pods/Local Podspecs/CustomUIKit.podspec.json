@@ -1,0 +1,27 @@
+{
+  "name": "CustomUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of CustomUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/H/CustomUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "H": "lihe@koolearn.com"
+  },
+  "source": {
+    "git": "https://github.com/H/CustomUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CustomUIKit/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_CustomUIKit_Tests {
+  umbrella header "Pods-CustomUIKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
