@@ -7,6 +7,7 @@
 //
 
 #import "HViewController.h"
+#import <CustomUIKit/CustomViewController.h>
 
 @interface HViewController ()
 
@@ -16,14 +17,23 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-//    CustomViewController *vc = [CustomViewController new];
-//    [self presentViewController:vc animated:YES completion:nil];
+    CustomViewController *vc = [CustomViewController new];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"触碰modal";
+    label.textColor = [UIColor blackColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.center = self.view.center;
+    [label sizeToFit];
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning

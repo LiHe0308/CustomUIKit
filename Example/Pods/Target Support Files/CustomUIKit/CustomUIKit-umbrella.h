@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CustomViewController.h"
 
 FOUNDATION_EXPORT double CustomUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char CustomUIKitVersionString[];

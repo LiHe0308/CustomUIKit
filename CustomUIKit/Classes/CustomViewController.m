@@ -13,11 +13,28 @@
 
 @implementation CustomViewController
 
+- (UIModalPresentationStyle)modalPresentationStyle {
+    return UIModalPresentationFullScreen;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor redColor];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"触碰返回";
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.center = self.view.center;
+    [label sizeToFit];
+    [self.view addSubview:label];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
