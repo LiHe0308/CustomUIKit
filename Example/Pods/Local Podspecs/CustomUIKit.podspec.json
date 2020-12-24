@@ -18,7 +18,7 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "CustomUIKit/Classes/**/*",
+  "source_files": "CustomUIKit/Classes/**/*.{h,m}s",
   "dependencies": {
     "AFNetworking": [
 
